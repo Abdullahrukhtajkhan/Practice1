@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .card {
+            
+  position: relative;
+  width: 300px; /* Adjust the width to your preference */
+  height: 200px; /* Adjust the height to your preference */
+  overflow: hidden;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  background: #fff; /* Set the background color of your card content */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -268px; /* Adjust the initial right position as needed */
+  margin: auto;
+  width: 96%;
+  height: 110%;
+  background: #002248;
+  transition: transform 0.9s;
+  z-index: -1;
+  border-radius: 100%;
+  transform: perspective(500px) rotateY(-90deg);
+  opacity: 0; /* Initially, make it invisible */
+}
+
+.card:hover::after {
+  transform: perspective(500px) rotateY(0deg); /* Rotate to 0 degrees on hover */
+  opacity: 1; /* Make it visible on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+          <!-- Card content goes here -->
+        </div>
+      </div>
+      
+</body>
+</html>
