@@ -188,6 +188,7 @@ input[type=submit]:hover {
 }
 
 .section3 {
+    padding: 50px 0px;
     background-color: #140d36;
 }
 
@@ -300,4 +301,26 @@ input[type=submit]:hover {
     
     transform: perspective(500px) rotateY(0deg); /* Rotate to 0 degrees on hover */
     opacity: 1; /* Make it visible on hover */
+  }
+  .section4{
+    padding: 50px 0px;
+  }
+  
+  .aboutimg img{
+    max-width: 90%;
+    
+  }
+  .aboutcontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .aboutcontent h2 {
+    font-size: 41px;
+    font-weight: 700;
+    color: #00295a;
+  }
+  .aboutcontent p{
+    color: rgb(73, 72, 72);
+    font-size: 15px;
   }
