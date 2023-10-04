@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-        }
-        .card {
-            
-  position: relative;
-  width: 300px; /* Adjust the width to your preference */
-  height: 200px; /* Adjust the height to your preference */
-  overflow: hidden;
-}
+  <meta charset="utf-8" />
+  <title>Team Section Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Demo styles -->
+  <style>
+    .swiper-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-.card-content {
-  position: relative;
-  z-index: 1;
-  background: #fff; /* Set the background color of your card content */
-  padding: 20px; /* Adjust the padding as needed */
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -268px; /* Adjust the initial right position as needed */
-  margin: auto;
-  width: 96%;
-  height: 110%;
-  background: #002248;
-  transition: transform 0.9s;
-  z-index: -1;
-  border-radius: 100%;
-  transform: perspective(500px) rotateY(-90deg);
-  opacity: 0; /* Initially, make it invisible */
-}
-
-.card:hover::after {
-  transform: perspective(500px) rotateY(0deg); /* Rotate to 0 degrees on hover */
-  opacity: 1; /* Make it visible on hover */
-}
-
-    </style>
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-        <div class="card-content">
-          <!-- Card content goes here -->
+  <!-- Team Section Slider -->
+
+  <div class="container mt-5">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide col-md-4">
+          <div class="card">
+            <img src="team-member-1.jpg" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Team Member 1</h5>
+              <p class="card-text">Description for Team Member 1.</p>
+            </div>
+          </div>
         </div>
+        <div class="swiper-slide col-md-4">
+          <div class="card">
+            <img src="team-member-2.jpg" class="card-img-top" alt="Team Member 2">
+            <div class="card-body">
+              <h5 class="card-title">Team Member 2</h5>
+              <p class="card-text">Description for Team Member 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide col-md-4">
+          <div class="card">
+            <img src="team-member-3.jpg" class="card-img-top" alt="Team Member 3">
+            <div class="card-body">
+              <h5 class="card-title">Team Member 3</h5>
+              <p class="card-text">Description for Team Member 3.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
       </div>
-      
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS (optional, if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 3, // Display three cards per view
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
