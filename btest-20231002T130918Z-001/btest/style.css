@@ -627,11 +627,15 @@ hr{
     background-color: #002248;
     padding: 50px 30px;
     text-align: center;
+    /* animation: linearGradientMove 0.5s infinite linear; */
 
 }
+
 .card:hover{
-    border: 3px solid #35ad9e ;
+    border: 3px dotted #35ad9e ;
+    
 }
+
 .card:hover .cardtitle h4{
     color: #35ad9e;
 }
@@ -654,3 +658,122 @@ hr{
     color: #92a0b1;
     padding: 10px 0px;
 }
+.check{
+    max-width: 90%;
+}
+.subscription{
+    padding: 70px 0px;
+    background-color: #002248;
+    text-align: center;
+    color: white;
+    border-radius: 10px ;
+}
+.subscription h4{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.subscription h2{
+    font-size: 46px;
+    font-weight: 700;
+    padding: 10px 0px ;
+}
+.subscription ul{
+    
+    justify-content: center;
+    padding: 10px 0px;
+    align-items: center;
+    
+    align-items: center;
+    
+}
+
+.subscription ul li{
+    text-align: center; 
+    display: inline-block;
+    margin: 5px 0px;
+    margin-top: 30px; 
+
+}
+.subscription ul li i{
+    color: #1aada7;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+footer{
+    color: white;
+    padding: 70px 0px;
+    background: url(footer-bg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   width: 100%;
+}
+.fot1{
+    padding-top: 20px;
+}
+.fot2{
+    padding-top: 20px;
+}
+.fimg{
+    max-width: 500px;
+    padding-bottom: 10%;
+   
+}
+.fot1 p{
+  padding-right: 50px;
+}
+.sicons{
+    display: flex;
+}
+.fot1 i{
+    color: #3abba7;
+    background-color: white;
+    border-radius: 50%;
+    height: 38px;
+    width: 41px;
+    text-align: center;
+    font-size: 21px;
+    padding-top: 9px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.fot2 h4{
+    padding-left: 27px;
+    font-size: 22px;
+}
+.fot2 UL{
+    padding-top: 10px;
+}
+.fot2 ul li{
+    padding-top: 10px;
+}
+.fot2 i{
+    
+    margin-right: 15px;
+
+}
+.fot4 i{
+    background-color: #002248;
+    height: 33px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    
+}
+.fot4 li a{
+    font-size: 15px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .section1 h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .section1 p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+  }
