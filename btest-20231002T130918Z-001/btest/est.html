@@ -3,74 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Responsive Bootstrap Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Navbar with Icons</title>
     <style>
-        .subscription {
-            padding: 70px 0px;
-            background-color: #002248;
-            text-align: center;
-            color: white;
-            border-radius: 10px;
-        }
+        /* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-        .subscription h4 {
-            font-size: 20px;
-            font-weight: 600;
-        }
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 
-        .subscription h2 {
-            font-size: 46px;
-            font-weight: 700;
-            padding: 10px 0px;
-        }
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
 
-        .subscription ul {
-            justify-content: center;
-            padding: 10px 0px;
-            align-items: center;
-        }
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
 
-        .subscription ul li {
-            margin: 10px 0px;
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-        }
-
-        .subscription ul li i {
-            color: #1aada7;
-            margin-right: 10px;
-        }
-
-        @media (min-width: 992px) {
-            .subscription ul li {
-                text-align: center; /* Center text on desktop */
-                flex-direction: row; /* Change flex direction to row on desktop */
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="subscription">
-                    <h4>Subscription Benefits</h4>
-                    <h2>Choose Your Plan</h2>
-                    <ul>
-                        <li><i class="fa-regular fa-square-check"></i> Free 14-day trial</li>
-                        <li><i class="fa-regular fa-square-check"></i> No credit card required</li>
-                        <li><i class="fa-regular fa-square-check"></i> Cancel anytime</li>
-                        <li><i class="fa-regular fa-square-check"></i> Support 24/7</li>
-                    </ul>
-                </div>
-            </div>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Logo</a>
         </div>
-    </div>
-
-    <!-- Bootstrap JS and jQuery (you may need to include them based on your project) -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <div class="navbar-links">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-search"></i> Search</a>
+            <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+        </div>
+    </nav>
 </body>
 </html>

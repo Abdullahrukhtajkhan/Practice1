@@ -647,7 +647,7 @@ hr {
 }
 
 .card {
-
+    width: 96%;
     display: flex;
     background-color: #002248;
     padding: 50px 30px;
@@ -986,5 +986,13 @@ footer {
     .subscription h2{
         font-size: 22px;
     }
+    .btn{
+        display: none;
+    }
+    .logo img{
+        max-width: 100%;
+    }
+    
+   
 
 }
